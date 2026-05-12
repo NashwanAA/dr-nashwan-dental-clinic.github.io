@@ -1,425 +1,165 @@
-/* Reset أساسي */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>د. نشوان الخولاني | جراحة الوجه والفكين وزراعة الأسنان - إب</title>
+    
+    <!-- تحسين محركات البحث SEO -->
+    <meta name="description" content="الموقع الرسمي للدكتور نشوان الخولاني في إب. متخصص في جراحة الوجه والفكين، الزراعة الوجنية، وعلاج آلام المفصل الفكي. معتمد لدى الطبي وسلامتي 24.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
-body {
-    font-family: 'Cairo', 'Tahoma', sans-serif; /* استخدام خط Cairo إذا كان متاحًا */
-    line-height: 1.7;
-    color: #333;
-    background-color: #f9f9f9;
-    direction: rtl; /* دعم اللغة العربية */
-}
+    <!-- شريط التنقل (Navbar) -->
+    <header class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">د. نشوان الخولاني</a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link">الرئيسية</a></li>
+                    <li><a href="#articles" class="nav-link">المقالات</a></li>
+                    <li><a href="#appointment" class="btn-nav shadow-btn">احجز موعدك</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-    overflow: hidden; /* لإدارة العناصر العائمة */
-    padding: 0 20px;
-}
+    <!-- القسم الرئيسي (Hero Section) -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>رعاية تخصصية لابتسامة تدوم</h1>
+                <p>جراحة الوجه والفكين وزراعة الأسنان المتقدمة بأحدث التقنيات العالمية في قلب مدينة إب.</p>
+                <div class="hero-btns">
+                    <a href="#appointment" class="btn-primary">استشارة تخصصية مجانية</a>
+                    <a href="https://wa.me/967779690850" class="btn-outline"><i class="fab fa-whatsapp"></i> تواصل سريع</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-/* شريط التنقل */
-.navbar {
-    background: #fff;
-    color: #333;
-    padding: 1rem 0;
-    border-bottom: 1px solid #eee;
-    position: fixed; /* جعله ثابتًا في الأعلى */
-    width: 100%;
-    top: 0;
-    z-index: 1000; /* لضمان ظهوره فوق العناصر الأخرى */
-    transition: background-color 0.3s ease;
-}
+    <!-- قسم عن الدكتور (About) -->
+    <section id="about" class="about-section" style="padding: 80px 0; background: #fff;">
+        <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2 style="color: #2c3e50; margin-bottom: 20px;">من هو الدكتور نشوان الخولاني؟</h2>
+                <p style="line-height: 1.8; color: #555;">
+                    اختصاصي متميز في جراحة الوجه والفكين، يمتلك خبرة واسعة في التعامل مع الحالات الجراحية المعقدة. يسعى دائماً لتقديم أفضل الحلول العلاجية لمرضاه في مدينة إب، مع التركيز على الدقة والنتائج المستدامة.
+                </p>
+            </div>
+        </div>
+    </section>
 
-.navbar.sticky-nav { /* لتغيير بسيط عند التمرير */
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+    <!-- قسم أوسمة الثقة (Trust Signals) -->
+    <section class="trust-signals" style="padding: 40px 0; background: #fdfdfd; border-top: 1px solid #eee; border-bottom: 1px solid #eee;">
+        <div class="container" style="text-align: center;">
+            <p style="color: #7f8c8d; font-size: 0.9rem; margin-bottom: 25px; font-weight: bold;">نال ثقة أكبر المنصات الطبية المعتمدة في اليمن</p>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px; opacity: 0.8;">
+                <!-- منصة الطبي -->
+                <a href="https://altibbi.com/دكتور/نشوان-الخولاني" target="_blank" style="max-width: 130px; transition: 0.3s;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Altibbi_Logo.png/640px-Altibbi_Logo.png" alt="الدكتور نشوان الخولاني على الطبي" style="width: 100%; filter: grayscale(100%);" onmouseover="this.style.filter='none'" onmouseout="this.style.filter='grayscale(100%)'">
+                </a>
+                <!-- منصة سلامتي 24 -->
+                <a href="https://salamati24.com/ar/doctor/د-نشوان-الخولاني" target="_blank" style="max-width: 130px; transition: 0.3s;">
+                    <img src="https://salamati24.com/assets/images/logo.png" alt="الدكتور نشوان الخولاني على سلامتي 24" style="width: 100%; filter: grayscale(100%);" onmouseover="this.style.filter='none'" onmouseout="this.style.filter='grayscale(100%)'">
+                </a>
+            </div>
+        </div>
+    </section>
 
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    <!-- قسم المقالات الطبية (Articles) -->
+    <section id="articles" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">دليلك الصحي للوعي الجراحي</h2>
+            <div class="articles-grid">
+                <!-- مقال 1 -->
+                <a href="trigeminal-neuralgia.html" class="article-card">
+                    <img src="images/trigeminal.webp" alt="العصب الخامس">
+                    <h3>ألم العصب الخامس والأسنان</h3>
+                    <p>كيف تفرق بينهما وتتجنب خلع الأسنان السليمة؟</p>
+                </a>
+                <!-- مقال 2 -->
+                <a href="zygomatic-implants.html" class="article-card">
+                    <img src="images/zygomatic.webp" alt="الزراعة الوجنية">
+                    <h3>الزراعة الوجنية (Zygomatic)</h3>
+                    <p>الحل النهائي لحالات ضمور العظم الشديد.</p>
+                </a>
+                <!-- مقال 3 -->
+                <a href="tmj-disorders.html" class="article-card">
+                    <img src="images/tmj.webp" alt="المفصل الفكي">
+                    <h3>آلام المفصل الفكي (TMJ)</h3>
+                    <p>الأعراض، الأسباب، وطرق العلاج الحديثة.</p>
+                </a>
+            </div>
+        </div>
+    </section>
 
-.navbar .logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #0056b3;
-    text-decoration: none;
-}
+    <!-- قسم الحجز المطور (Booking Form) -->
+    <section id="appointment" style="padding: 80px 20px; background: #f0fdfa;">
+        <div style="max-width: 600px; margin: auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.05);">
+            <h2 style="text-align: center; color: #2c3e50; margin-bottom: 30px;">📅 احجز موعدك الآن</h2>
+            <form id="bookingForm" style="display: flex; flex-direction: column; gap: 20px;">
+                <input type="text" id="pName" placeholder="الاسم الكامل" required style="padding: 15px; border: 1px solid #ddd; border-radius: 10px; font-family: 'Cairo';">
+                <select id="pService" style="padding: 15px; border: 1px solid #ddd; border-radius: 10px; font-family: 'Cairo';">
+                    <option value="استشارة جراحية">استشارة جراحية</option>
+                    <option value="زراعة أسنان">زراعة أسنان</option>
+                    <option value="خلع ضرس عقل جراحي">خلع ضرس عقل جراحي</option>
+                    <option value="علاج المفصل الفكي">علاج المفصل الفكي</option>
+                </select>
+                <input type="date" id="pDate" required style="padding: 15px; border: 1px solid #ddd; border-radius: 10px; font-family: 'Cairo';">
+                <button type="button" onclick="sendToWhatsApp()" style="background: #00b894; color: white; padding: 18px; border: none; border-radius: 10px; font-weight: bold; font-size: 1.1rem; cursor: pointer; transition: 0.3s;">
+                    تأكيد الموعد عبر واتساب <i class="fab fa-whatsapp"></i>
+                </button>
+            </form>
+        </div>
+    </section>
 
-.navbar nav ul {
-    list-style: none;
-    display: flex;
-}
+    <!-- التذييل المطور (Footer Navigation) -->
+    <footer style="background: #2c3e50; color: white; padding: 60px 20px 20px;">
+        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+            <div>
+                <h3 style="color: #00b894; margin-bottom: 20px;">د. نشوان الخولاني</h3>
+                <p style="opacity: 0.8; line-height: 1.8;">مركز رائد في جراحة الوجه والفكين بمدينة إب، نجمع بين الخبرة العلمية والتقنيات الحديثة لخدمتكم.</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 20px;">روابط هامة</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 10px;"><a href="#articles" style="color: #ccc; text-decoration: none;">المقالات الطبية</a></li>
+                    <li style="margin-bottom: 10px;"><a href="privacy-policy.html" style="color: #ccc; text-decoration: none;">سياسة الخصوصية</a></li>
+                    <li style="margin-bottom: 10px;"><a href="faq.html" style="color: #ccc; text-decoration: none;">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 20px;">تواصل معنا</h4>
+                <p style="margin-bottom: 10px;"><i class="fas fa-map-marker-alt" style="color: #00b894;"></i> اليمن - إب - مفرق جبلة</p>
+                <p style="margin-bottom: 10px;"><i class="fab fa-whatsapp" style="color: #00b894;"></i> 779690850</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; opacity: 0.7;">
+            © 2026 مركز الدكتور نشوان الخولاني. جميع الحقوق محفوظة.
+        </div>
+    </footer>
 
-.navbar nav ul li {
-    margin-right: 20px; /* استخدم margin-left في LTR */
-}
+    <script>
+        // وظيفة إرسال بيانات النموذج لواتساب
+        function sendToWhatsApp() {
+            const name = document.getElementById('pName').value;
+            const service = document.getElementById('pService').value;
+            const date = document.getElementById('pDate').value;
+            
+            if(!name || !date) {
+                alert("يرجى ملء جميع البيانات");
+                return;
+            }
 
-.navbar nav ul li a {
-    color: #555;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.navbar nav ul li a:hover,
-.navbar nav ul li a.active { /* للتأشير على الصفحة النشطة */
-    color: #007bff;
-}
-
-/* قسم الهيرو (الرئيسية) */
-.hero {
-    background: linear-gradient(rgba(0, 86, 179, 0.7), rgba(0, 123, 255, 0.5)), url('images/dental-background.jpg') no-repeat center center/cover; /* استبدل بصورة خلفية مناسبة */
-    color: #fff;
-    height: 70vh; /* ارتفاع مناسب */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 80px; /* لترك مسافة لشريط التنقل */
-}
-
-.hero h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.hero .subtitle {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-}
-
-/* الأزرار العامة */
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    cursor: pointer;
-    border: none;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
-
-.btn-secondary {
-    background-color: #6c757d;
-    color: #fff;
-}
-
-.btn-secondary:hover {
-    background-color: #545b62;
-    transform: translateY(-2px);
-}
-
-.btn-map {
-    background-color: #28a745;
-    color: white;
-    margin-top: 10px;
-}
-.btn-map:hover {
-    background-color: #1e7e34;
-}
-
-/* تصميم الأقسام العامة */
-section {
-    padding: 60px 0;
-}
-
-section h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    color: #0056b3;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-section h2::after { /* خط صغير تحت العنوان */
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background-color: #007bff;
-}
-
-/* قسم الخدمات */
-.services-section {
-    background-color: #fff;
-}
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    text-align: center;
-}
-
-.service-item {
-    background: #f9f9f9;
-    padding: 30px 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
-}
-
-.service-item .service-icon {
-    width: 80px; /* حجم أيقونة الخدمة */
-    height: 80px;
-    margin-bottom: 20px;
-    border-radius: 50%; /* لجعلها دائرية إذا كانت مربعة */
-    object-fit: cover; /* للحفاظ على نسبة العرض إلى الارتفاع */
-    background-color: #e9ecef; /* لون خلفية مؤقت للأيقونات */
-}
-
-.service-item h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #007bff;
-}
-
-/* قسم من نحن */
-.about-section {
-    background-color: #eef6ff; /* لون خلفية فاتح */
-}
-.about-content {
-    display: flex;
-    flex-wrap: wrap; /* للسماح بالالتفاف على الشاشات الصغيرة */
-    align-items: center;
-    gap: 40px;
-}
-.about-text {
-    flex: 1;
-    min-width: 300px; /* لضمان عدم ضغط النص كثيرًا */
-}
-.about-image {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
-}
-.about-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* قسم المقالات */
-.articles-section {
-    background-color: #fff;
-}
-.articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-.article-card {
-    background: #f9f9f9;
-    border-radius: 8px;
-    overflow: hidden; /* لإخفاء أي أجزاء من الصورة تخرج عن الإطار */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.article-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-}
-.article-card img {
-    width: 100%;
-    height: 200px; /* ارتفاع ثابت للصور */
-    object-fit: cover; /* لتغطية المساحة مع الحفاظ على النسبة */
-}
-.article-card h3 {
-    font-size: 1.3em;
-    margin: 15px;
-    color: #007bff;
-}
-.article-card p {
-    font-size: 0.95em;
-    margin: 0 15px 15px 15px;
-    color: #555;
-}
-.article-card .btn-secondary {
-    margin: 0 15px 20px 15px;
-}
-
-/* قسم تواصل معنا */
-.contact-section {
-    background-color: #f0f8ff; /* لون أزرق فاتح جدًا */
-}
-.contact-details {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* توزيع الفروع بشكل جيد */
-    gap: 30px;
-    margin-top: 30px;
-}
-.branch {
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    text-align: center;
-    flex-basis: 45%; /* كل فرع يأخذ حوالي 45% من العرض */
-    min-width: 280px;
-}
-.branch h3 {
-    color: #0056b3;
-    margin-bottom: 15px;
-}
-.branch p {
-    margin-bottom: 8px;
-}
-.branch a {
-    color: #007bff;
-    font-weight: bold;
-}
-
-/* التذييل (Footer) */
-.footer {
-    background-color: #343a40;
-    color: #f8f9fa;
-    text-align: center;
-    padding: 30px 0;
-    margin-top: 40px;
-}
-.footer p {
-    margin-bottom: 5px;
-    font-size: 0.9em;
-}
-
-/* أزرار الاتصال المعلقة */
-.fixed-buttons {
-    position: fixed;
-    bottom: 20px;
-    left: 20px; /* تغيير إلى right إذا كانت الأزرار على اليمين أفضل للغة العربية */
-    z-index: 1000;
-    display: flex;
-    flex-direction: column; /* ترتيب الأزرار عموديًا */
-}
-
-.fab-btn {
-    background-color: #007bff;
-    color: white;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin-bottom: 10px; /* مسافة بين الأزرار */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.fab-btn:hover {
-    transform: scale(1.1);
-}
-
-.fab-btn img { /* لتصميم أيقونات SVG أو PNG داخل الزر */
-    width: 28px;
-    height: 28px;
-    filter: invert(1); /* لجعل الأيقونة بيضاء إذا كانت سوداء */
-}
-
-.phone-btn {
-    background-color: #28a745; /* أخضر للاتصال */
-}
-.phone-btn:hover {
-    background-color: #1e7e34;
-}
-
-.whatsapp-btn {
-    background-color: #25D366; /* لون واتساب */
-}
-.whatsapp-btn:hover {
-    background-color: #128C7E;
-}
-
-
-/* استجابة للتصاميم المختلفة (Responsive Design) */
-@media (max-width: 768px) {
-    .navbar .container {
-        flex-direction: column; /* الشعار فوق القائمة */
-    }
-    .navbar nav ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin-top: 10px;
-    }
-    .navbar nav ul li {
-        margin-right: 0;
-        margin-bottom: 10px;
-        width: 100%;
-        text-align: center;
-    }
-    .navbar nav ul li a {
-        display: block;
-        padding: 8px;
-        background: #f8f8f8;
-        border-radius: 4px;
-    }
-
-    .hero h1 {
-        font-size: 2.2em;
-    }
-    .hero .subtitle {
-        font-size: 1.1em;
-    }
-
-    .services-grid, .articles-grid {
-        grid-template-columns: 1fr; /* عمود واحد على الشاشات الصغيرة */
-    }
-
-    .about-content {
-        flex-direction: column;
-    }
-    .about-image {
-        margin-top: 30px;
-    }
-
-    .contact-details {
-        flex-direction: column;
-        align-items: center;
-    }
-    .branch {
-        flex-basis: 90%; /* الفرع يأخذ عرض أكبر */
-    }
-
-    .fixed-buttons {
-        left: 15px; /* تعديل موقع الأزرار المعلقة للشاشات الصغيرة */
-        bottom: 15px;
-    }
-    .fab-btn {
-        width: 50px;
-        height: 50px;
-    }
-    .fab-btn img {
-        width: 24px;
-        height: 24px;
-    }
-}
+            const text = `مرحباً د. نشوان الخولاني، أود حجز موعد عبر الموقع الرسمي:\nالاسم: ${name}\nالخدمة المطلوبة: ${service}\nالتاريخ المفضل: ${date}`;
+            window.open(`https://wa.me/967779690850?text=${encodeURIComponent(text)}`, '_blank');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
