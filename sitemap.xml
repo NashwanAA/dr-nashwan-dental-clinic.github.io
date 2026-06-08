@@ -1,1 +1,28 @@
-.
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+  <loc>https://YOUR-DOMAIN.com/</loc>
+</url>
+
+<url>
+  <loc>https://YOUR-DOMAIN.com/articles/whitening-teeth.html</loc>
+</url>
+
+<url>
+  <loc>https://YOUR-DOMAIN.com/articles/tmj-disorder.html</loc>
+</url>
+
+<url>
+  <loc>https://YOUR-DOMAIN.com/articles/trigeminal-neuralgia.html</loc>
+</url>
+
+<url>
+  <loc>https://YOUR-DOMAIN.com/articles/zygomatic-implants.html</loc>
+</url>
+
+<url>
+  <loc>https://YOUR-DOMAIN.com/articles/wisdom-tooth-surgery.html</loc>
+</url>
+
+</urlset>
