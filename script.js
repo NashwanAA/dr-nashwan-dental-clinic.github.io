@@ -1,156 +1,55 @@
-/* ===================================================================
-   DR NASHWAN DENTAL CENTER - ENTERPRISE SCRIPT SYSTEM (UPDATED v2.0)
-=================================================================== */
+/**
+ * 🎯 SYSTEM: CONVERSION & PATIENT TRAFFIC TRACKING DETECTOR
+ * DESIGNED FOR: DR. NASHWAN AL-KHAWLANI DENTAL CLINIC
+ * PURPOSE: DYNAMICALLY CAPTURE VISITOR INTENT & CUSTOMIZE WHATSAPP MESSAGES
+ */
 
-document.addEventListener("DOMContentLoaded", () => {
-    initializeSmoothScroll();
-    initializeStickyHeader();
-    initializeRevealAnimations();
-    initializeBackToTop();
-    initializeLazyLoading();
-    initializePerformanceMonitor();
-    initializeDynamicWhatsAppTracking(); // تفعيل محرك التتبع الديناميكي الجديد للمرضى
-});
-
-/* SMOOTH SCROLL FOR INTERNAL ANCHORS */
-function initializeSmoothScroll() {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute("href"));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-            }
-        });
-    });
-}
-
-/* STICKY HEADER SYSTEM */
-function initializeStickyHeader() {
-    const header = document.querySelector(".header");
-    if (!header) return;
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 50) {
-            header.style.background = "rgba(255,255,255,.98)";
-            header.style.backdropFilter = "blur(10px)";
-            header.style.boxShadow = "0 5px 20px rgba(0,0,0,.08)";
-        } else {
-            header.style.background = "#ffffff";
-            header.style.boxShadow = "0 2px 20px rgba(0,0,0,.05)";
-        }
-    });
-}
-
-/* REVEAL ANIMATION VIA INTERSECTION OBSERVER */
-function initializeRevealAnimations() {
-    const elements = document.querySelectorAll(
-        ".service-card, .article-card, .specialty-card, .feature-box, .faq-item, .contact-card, .landing-cta-box"
-    );
-    const observer = new IntersectionObserver(
-        entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show-element");
-                }
-            });
-        },
-        { threshold: 0.12 }
-    );
-    elements.forEach(element => {
-        element.classList.add("hidden-element");
-        observer.observe(element);
-    });
-}
-
-/* BACK TO TOP BUTTON BUTTON WITH SYSTEM */
-function initializeBackToTop() {
-    const button = document.createElement("button");
-    button.innerHTML = "↑";
-    button.id = "backToTop";
-    document.body.appendChild(button);
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 600) {
-            button.classList.add("show");
-        } else {
-            button.classList.remove("show");
-        }
-    });
-    button.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-}
-
-/* AUTOMATIC IMAGE LAZY LOADING */
-function initializeLazyLoading() {
-    document.querySelectorAll("img").forEach(img => {
-        img.setAttribute("loading", "lazy");
-    });
-}
-
-/* PERFORMANCE CORE MONITOR */
-function initializePerformanceMonitor() {
-    window.addEventListener("load", () => {
-        const pageLoadTime = performance.now();
-        console.log(`Dr. Nashwan System: Page Loaded in ${pageLoadTime.toFixed(0)} ms`);
-    });
-}
-
-/* GOOGLE ANALYTICS REUSABLE TRACKING EVENT */
-function trackEvent(category, action, label = "") {
-    if (typeof gtag === "function") {
-        gtag("event", action, {
-            event_category: category,
-            event_label: label
-        });
-    }
-}
-
-/* 🟢 🚀 DYNAMIC WHATSAPP TRACKING ENGINE (Conversion Hub) */
-function initializeDynamicWhatsAppTracking() {
-    // استخراج اسم الملف الحالي بدقة متناهية لتحديد مكان نقرة المريض
-    const path = window.location.pathname;
-    const pageName = path.substring(path.lastIndexOf('/') + 1) || "index.html";
+document.addEventListener("DOMContentLoaded", function () {
+    // 1. تحديد رقم الواتساب الرسمي للمركز (بدون أصفار إضافية أو علامة +)
+    const whatsappNumber = "967779690850";
     
-    // خريطة تتبع العناقيد والصفحات لربط الإعلانات بالنتائج الاستشارية
-    const pageTrackingMap = {
-        "index.html": "MAIN_HOME_PAGE",
-        "about.html": "ABOUT_DOCTOR_PAGE",
-        "services.html": "SERVICES_GUIDE_PAGE",
-        "contact.html": "CONTACT_US_PAGE",
-        "oral-maxillofacial-surgery.html": "SURGERY_SPECIALTY",
-        "dental-implants.html": "IMPLANTS_SPECIALTY",
-        "orthodontics.html": "ORTHODONTICS_SPECIALTY",
-        "cosmetic-dentistry.html": "COSMETIC_SPECIALTY",
-        "digital-dentistry.html": "DIGITAL_DENTAL_SPECIALTY",
-        "wisdom-tooth-surgery.html": "CLUSTER_WISDOM_TOOTH",
-        "zygomatic-implants.html": "CLUSTER_ZYGOMATIC",
-        "tmj-disorder.html": "CLUSTER_TMY_PAIN",
-        "trigeminal-neuralgia.html": "CLUSTER_NEURALGIA",
-        "whitening-teeth.html": "CLUSTER_WHITENING",
-        "implants-ib.html": "LANDING_IMPLANTS_ADS",
-        "wisdom-tooth-ib.html": "LANDING_WISDOM_ADS",
-        "smile-design-ib.html": "LANDING_SMILE_ADS"
-    };
+    // 2. قراءة اسم الملف الحالي من الرابط لتحديد سياق التتبع (Page Context)
+    const currentPath = window.location.pathname;
+    const pageName = currentPath.substring(currentPath.lastIndexOf('/') + 1) || "index.html";
 
-    const trackingCode = pageTrackingMap[pageName] || "GENERAL_PLATFORM";
-    const customMessage = encodeURIComponent(`مرحباً دكتور نشوان، أود الاستفسار وحجز موعد عبر المنصة الرقمية. كود الخدمة: [${trackingCode}]`);
+    // 3. قاعدة البيانات الذكية للرسائل التلقائية بناءً على الصفحة التي يتصفحها المريض
+    let customMessage = "مرحباً دكتور نشوان، أود الاستفسار عن الخدمات العلاجية المتوفرة في المركز وحجز موعد كشف.";
 
-    // تحديث كافة روابط الواتساب في الصفحة بالرسالة المخصصة للتتبع
-    document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
-        link.href = `https://wa.me/967779690850?text=${customMessage}`;
-        
-        link.addEventListener("click", () => {
-            trackEvent("WhatsApp_Conversion", "Click", trackingCode);
-        });
+    if (pageName.includes("about.html")) {
+        customMessage = "مرحباً دكتور نشوان، تصفحت سيرتكم الذاتية الموقرة وأود حجز موعد كشف واستشارة تخصصية في مركزكم.";
+    } else if (pageName.includes("services.html")) {
+        customMessage = "مرحباً دكتور، أنا أطلع على دليل الخدمات بمركزكم وأرغب في الاستفسار عن تكلفة خطة علاجية مخصصة لحالتي.";
+    } else if (pageName.includes("contact.html")) {
+        customMessage = "مرحباً بمركز الدكتور نشوان الخولاني، أنا متواجد في صفحة الاتصال وأرغب في تنسيق موعد زيارة للمركز بمفرق جبلة.";
+    } else if (pageName.includes("dental-implants.html")) {
+        customMessage = "مرحباً دكتور نشوان، أنا مهتم بـ (منظومة زراعة الأسنان وحلول الضمور العظمي الشديد) وأود الاستفسار عن الزرعات الوجنية/ثلاثية الأبعاد.";
+    } else if (pageName.includes("oral-maxillofacial-surgery.html")) {
+        customMessage = "مرحباً دكتور، أود حجز استشارة جراحية عاجلة بخصوص (جراحة الفم والوجه والفكين / أضراس العقل المطمورة المعقدة).";
+    } else if (pageName.includes("cosmetic-dentistry.html")) {
+        customMessage = "مرحباً دكتور نشوان، أرغب في حجز موعد لجلسة تصوير ومسح رقمي لتصميم ابتسامة هوليود (الفينير/اللومينير الخزفي).";
+    } else if (pageName.includes("digital-dentistry.html")) {
+        customMessage = "مرحباً دكتور، أود الاستفسار عن تكنولوجيا طب الأسنان الرقمي والماسح الضوئي وأخذ مقاس رقمي لتركيبات الزيركون بالمركز.";
+    } else if (pageName.includes("tmj-disorder.html")) {
+        customMessage = "مرحباً دكتور نشوان، قرأت مقالكم الطبي بخصوص (آلام المفصل الفكي واضطرابات العصب الخامس) وأعاني من أعراض مشابهة وأطلب موعد فحص.";
+    }
+
+    // 4. تشفير الرسالة الطبية لتتوافق مع بروتوكولات روابط الويب (URL Encoding)
+    const encodedMessage = encodeURIComponent(customMessage);
+    const finalWhatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+    // 5. محرك الحقن التلقائي: البحث عن كافة روابط الواتساب في الصفحة وتحديثها بالرسالة المشفرة
+    const allLinks = document.querySelectorAll("a");
+    let injectedCount = 0;
+
+    allLinks.forEach(function (link) {
+        const href = link.getAttribute("href");
+        // التحقق مما إذا كان الرابط موجهاً للواتساب العام أو يحتوي على الأيقونة العائمة
+        if (href && (href.includes("wa.me") || link.classList.contains("whatsapp-float"))) {
+            link.setAttribute("href", finalWhatsappUrl);
+            link.setAttribute("target", "_blank"); // فتح المحادثة في نافذة جديدة دوماً لعدم تشتيت المريض
+            injectedCount++;
+        }
     });
 
-    // تتبع نقرات مراجعات جوجل بشكل منفصل
-    document.querySelectorAll('a[href*="g.page"]').forEach(link => {
-        link.addEventListener("click", () => {
-            trackEvent("Google_Review", "Click", trackingCode);
-        });
-    });
-}
+    console.log(`[Tracking System Activated]: Successfully injected custom messages into (${injectedCount}) WhatsApp buttons for context: ${pageName}`);
+});
