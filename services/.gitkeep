@@ -1,1 +1,146 @@
-.
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخدمات العلاجية والجراحية المتقدمة | د. نشوان الخولاني</title>
+    <meta name="description" content="استكشف القائمة الكاملة للخدمات الطبية بمركز الدكتور نشوان الخولاني في إب: زراعة الأسنان الرقمية، الجراحات الوجهية المعقدة، تصميم الابتسامة، وعلاج آلام الفك.">
+    <meta name="keywords" content="خدمات مركز الأسنان إب, زراعة أسنان رقمية اليمن, عمليات جراحة الوجه والفكين, تجميل الأسنان إب, علاج آلام العصب الخامس">
+    <link rel="canonical" href="https://nashwanaa.github.io/dr-nashwan-dental-clinic/services.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo/favicon.ico">
+
+    <!-- MEDICAL SERVICE SCHEMA FOR DETAILED SEARCH RESULT RENDERING -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "name": "قائمة الخدمات الطبية والجراحية بمركز الدكتور نشوان الخولاني",
+        "url": "https://nashwanaa.github.io/dr-nashwan-dental-clinic/services.html",
+        "description": "دليل الخدمات الشامل لطب الأسنان وجراحة الفم والوجه والفكين والزراعات المتطورة ثلاثية الأبعاد بمدينة إب.",
+        "mainEntity": {
+            "@type": "MedicalClinic",
+            "name": "مركز الدكتور نشوان عبد الوهاب الخولاني لطب الأسنان",
+            "medicalSpecialty": [
+                "OralAndMaxillofacialSurgery",
+                "DentalImplants",
+                "CosmeticDentistry"
+            ]
+        }
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION HEADER SYSTEM -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <img src="assets/logo/logo.png" alt="شعار micro-branding لمركز الدكتور نشوان الخولاني" class="logo">
+                <div>
+                    <h1>مركز الدكتور نشوان عبد الوهاب الخولاني لطب الأسنان</h1>
+                    <p>Dr. Nashwan Abdulwahab Alkhawlani Dental Center</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الدكتور</a></li>
+                    <li><a href="services.html" class="active" style="color: var(--secondary);">خدماتنا</a></li>
+                    <li><a href="index.html#specialties">التخصصات الجراحية</a></li>
+                    <li><a href="index.html#articles">المدونة الطبية</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO GRID HEADER -->
+    <section class="hero" style="background: linear-gradient(135deg, #2c3e50, #16a085);">
+        <div class="container">
+            <h2>منظومة الخدمات والحلول الجراحية والرقمية</h2>
+            <p>نوظف الهندسة الرقمية والطباعة ثلاثية الأبعاد لتقديم حلول علاجية جذرية وناجحة، ابتداءً من الوقاية الروتينية وحتى الأعقاد الجراحية.</p>
+        </div>
+    </section>
+
+    <!-- MAIN SERVICES SYSTEM GRID -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>دليلك الشامل لخدماتنا المتخصصة</h2>
+                <p>اضغط على التخصص الدقيق لقراءة الشرح الطبي التفصيلي لكل منظومة علاجية</p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- منظومة 1 -->
+                <div class="service-card">
+                    <h3 style="color: var(--secondary);">🧬 جراحات الفم والوجه والفكين</h3>
+                    <p>تشمل استئصال الأورام والتكيسات الفكية الحميدة، جراحات الفكين التقويمية، معالجة وتثبيت كسور الوجه والفكين بشرائح التيتانيوم، والخلع الجراحي الدقيق لجميع أضراس العقل المطمورة بالقرب من البنى العصبية الحساسة.</p>
+                    <a href="specialties/oral-maxillofacial-surgery.html" style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px; font-size: 0.9rem;">استكشف المنظومة الجراحية بالكامل ←</a>
+                </div>
+
+                <!-- منظومة 2 -->
+                <div class="service-card">
+                    <h3 style="color: var(--secondary);">🦷 زراعة الأسنان وحلول الضمور العظمي</h3>
+                    <p>تعويض الأسنان المفقودة فورياً عبر بروتوكولات التحميل الفوري، وتوفير الحلول الهندسية المتقدمة لمرضى الضمور العظمي الشديد والحاد عن طريق الزرعات الوجنية المتقدمة (Zygomatic) والزرعات ثلاثية الأبعاد المصممة تحت السمحاق.</p>
+                    <a href="specialties/dental-implants.html" style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px; font-size: 0.9rem;">استكشف تكنولوجيا زراعة الأسنان ←</a>
+                </div>
+
+                <!-- منظومة 3 -->
+                <div class="service-card">
+                    <h3 style="color: var(--secondary);">💎 تصميم الابتسامة وطب الأسنان التجميلي</h3>
+                    <p>تصميم الابتسامات الفاخرة رقمياً وبشكل مخصص يتناسب مع ملامح الوجه التشريحية، وتصنيع عدسات الفينير واللومينير بأحدث خامات الخزف الصديقة للثة، بالإضافة لجلسات تبييض الأسنان بالليزر وتجميل وتوريد اللثة الرقمي.</p>
+                    <a href="specialties/cosmetic-dentistry.html" style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px; font-size: 0.9rem;">استكشف خيارات التجميل الرقمي ←</a>
+                </div>
+
+                <!-- منظومة 4 -->
+                <div class="service-card">
+                    <h3>⚡ عيادة تشخيص وعلاج آلام الوجه والفكين</h3>
+                    <p>القسم التخصصي الأول لتدبير آلام العصب الخامس (Trigeminal Neuralgia) الحادة والتهاباته، معالجة اضطرابات المفصل الفكي الصدغي (TMJ) وحالات الجز على الأسنان أو صعوبة فتح الفم بأحدث الوسائل التحفظية والمحقونة المعاصرة.</p>
+                    <a href="articles/pain-diagnosis/tmj-disorder.html" style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px; font-size: 0.9rem;">اقرأ الملف التشخيصي لآلام الفك ←</a>
+                </div>
+
+                <!-- منظومة 5 -->
+                <div class="service-card">
+                    <h3>🔬 طب الأسنان الرقمي والتركيبات ثلاثية الأبعاد</h3>
+                    <p>أخذ القياسات الطبية الفموية بدقة متناهية عبر الماسحات الضوئية الفموية الرقمية (Intraoral Scanners) دون الحاجة للمواد التقليدية المزعجة للمريض، وتصميم وتصنيع التيجان والجسور الزيركونية والإيماكس الفاخرة عبر أنظمة الـ CAD/CAM.</p>
+                    <a href="specialties/digital-dentistry.html" style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px; font-size: 0.9rem;">تعرف على البنية الرقمية للمركز ←</a>
+                </div>
+
+                <!-- منظومة 6 -->
+                <div class="service-card">
+                    <h3>🛡️ علاج اللثة الوقائي والمعالجات اللبية</h3>
+                    <p>تقليح الأسنان وتنظيف الرواسب الجيرية العميقة لحماية النسج الداعمة حول الزرعات والأسنان الطبيعية، وعلاج التهابات اللثة المزمنة، بالإضافة إلى بروتوكولات سحب العصب ومعالجة القنوات الجذرية الحيوية باستخدام الأجهزة الدوارة الحديثة.</p>
+                    <a href="contact.html" style="color: var(--primary); font-weight: 700; display: inline-block; margin-top: 15px; font-size: 0.9rem;">احجز موعد كشف وفحص وقائي ←</a>
+                </div>
+
+            </div>
+
+            <!-- CORE CONVERSION BLOCK INTERACTION -->
+            <div class="landing-cta-box">
+                <h3 style="font-size: 1.8rem; margin-bottom: 15px;">استفد من التخطيط الرقمي المسبق قبل البدء بعلاجك</h3>
+                <p style="margin-bottom: 25px; opacity: 0.9; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    في مركزنا بمدينة إب، نؤمن بأن التشخيص الرقمي الصحيح يوفر على المريض الكثير من الوقت والتكاليف العلاجية. تواصل معنا لعرض الأشعة التشخيصية الخاصة بك ومناقشة الخطة الأنسب لحالتك.
+                </p>
+                <a href="https://wa.me/967779690850" class="btn-primary" style="background: #25d366; color: white; border: none;">🟢 استفسر عن تكلفة وخطة علاج حالتك الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SYSTEM -->
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2026 مركز الدكتور نشوان عبد الوهاب الخولاني لطب الأسنان | اليمن - إب - مفرق جبلة</p>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/967779690850" class="whatsapp-float" target="_blank">💬</a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
